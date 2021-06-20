@@ -1,0 +1,118 @@
+#nonClientArea {
+    -fx-background-color: #2c3e50;
+    -fx-border-color:#22313F;
+    -fx-background-insets: 1;
+}
+
+#nonClientArea .text {
+    -fx-font: 13px Tahoma;
+    -fx-fill: white;
+}
+
+#menuBar {
+
+  -fx-background-color: #33485d;
+}
+
+#menuBarScrollPane {
+ -fx-border-color: #22313F;
+  -fx-background-color: #33485d;
+}
+
+#clientArea {
+    -fx-background-color: #33485d;
+    -fx-border-color: transparent #22313F #22313F #22313F;
+    -fx-background-insets: 0 0 0 0
+}
+
+
+#buttonTab {
+   -fx-background-color: #2c3e50;
+   -fx-background-insets: 0;
+   -fx-background-radius: 0;
+}
+
+#buttonTab:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+#buttonTab .text {
+   -fx-font: 13px Tahoma;
+   -fx-fill: silver;
+}
+
+
+#addBot {
+  -fx-graphic: url('./add.png');
+  -fx-background-color: rgba(0, 0, 0, 0);
+        -fx-background-radius: 0;
+        -fx-background-insets: 0;
+}
+
+#addBot:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+#addBot .text {
+   -fx-font: 13px Tahoma;
+   -fx-fill: silver;
+}
+
+
+#close {
+        -fx-graphic: url('./close.png');
+        -fx-background-color: rgba(0, 0, 0, 0);
+        -fx-background-radius: 0;
+        -fx-background-insets: 0;
+}
+
+#close:hover {
+          -fx-background-color: rgba(200, 0, 0, 0.4);
+}
+
+#start {
+    -fx-graphic: url('./start.png');
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+
+#start:hover {
+        -fx-background-color: rgba(255, 255, 255, 0.2);
+      }
+
+
+      #stop {
+          -fx-graphic: url('./stop.png');
+          -fx-background-color: rgba(0, 0, 0, 0);
+          -fx-background-radius: 0;
+          -fx-background-insets: 0;
+      }
+
+      #stop:hover {
+              -fx-background-color: rgba(255, 255, 255, 0.2);
+            }
+
+
+#restart {
+    -fx-graphic: url('./restart.png');
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+
+#restart:hover {
+        -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+#minimize {
+    -fx-graphic: url('./minimize.png');
+        -fx-background-color: rgba(0, 0, 0, 0);
+        -fx-background-radius: 0;
+        -fx-background-insets: 0;
+}
+
+#minimize:hover {
+          -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="560.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.farm.ibot.ui.BotFrameController">
+    <children>
+        <AnchorPane fx:id="nonClientArea" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label focusTraversable="false" layoutX="10.0" opacity="0.71" pickOnBounds="false" prefHeight="27.0"
+                       prefWidth="76.0" text="OSRSBot"/>
+                <Button fx:id="close" mnemonicParsing="false" onAction="#btnClose_action" opacity="0.68"
+                        prefHeight="24.0" prefWidth="39.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                    <padding>
+                        <Insets top="1.0"/>
+                    </padding>
+                </Button>
+                <AnchorPane layoutX="2.0" layoutY="26.0" prefHeight="27.0" prefWidth="767.0" AnchorPane.leftAnchor="2.0"
+                            AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="26.0">
+                    <children>
+                        <ScrollPane fx:id="menuBarScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER"
+                                    prefHeight="27.0" prefWidth="767.0" vbarPolicy="NEVER" AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <content>
+                                <FlowPane fx:id="menuBar" prefHeight="27.0" prefWidth="756.0">
+                                    <children>
+                                        <Button fx:id="start" maxWidth="1.7976931348623157E308" minWidth="-Infinity"
+                                                mnemonicParsing="false" onAction="#buttonStart_Action" opacity="0.6"
+                                                prefHeight="26.0" prefWidth="32.0"/>
+                                        <Button fx:id="restart" alignment="CENTER" contentDisplay="CENTER"
+                                                maxWidth="1.7976931348623157E308" minWidth="-Infinity"
+                                                mnemonicParsing="false" onAction="#buttonRestart_Action" opacity="0.5"
+                                                prefHeight="26.0" prefWidth="32.0"/>
+                                        <Button fx:id="stop" alignment="CENTER" contentDisplay="CENTER"
+                                                maxWidth="1.7976931348623157E308" minWidth="-Infinity"
+                                                mnemonicParsing="false" onAction="#buttonStop_action" opacity="0.5"
+                                                prefHeight="26.0" prefWidth="32.0"/>
+                                        <Button fx:id="addBot" alignment="CENTER" contentDisplay="CENTER"
+                                                maxWidth="1.7976931348623157E308" minWidth="-Infinity"
+                                                mnemonicParsing="false" opacity="0.5" prefHeight="24.0"
+                                                prefWidth="32.0"/>
+                                    </children>
+                                </FlowPane>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+                <Button fx:id="minimize" layoutX="690.0" layoutY="4.0" mnemonicParsing="false"
+                        onAction="#btnMinimize_action" opacity="0.68" prefHeight="24.0" prefWidth="32.0"
+                        AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="1.0">
+                    <padding>
+                        <Insets top="3.0"/>
+                    </padding>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="clientArea" layoutX="3.0" layoutY="54.0" prefHeight="503.0" prefWidth="767.0">
+            <children>
+                <Pane fx:id="loadingPane" layoutX="283.0" layoutY="152.0" prefHeight="178.0" prefWidth="200.0"
+                      visible="false">
+                    <children>
+                        <ProgressIndicator layoutX="5.0" layoutY="2.0" opacity="0.43" prefHeight="123.0"
+                                           prefWidth="192.0"/>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="140.0"
+                               prefHeight="31.0" prefWidth="192.0" text="Loading OSRS Client" textFill="WHITE"/>
+                    </children>
+                </Pane>
+                <Pane fx:id="welcomePane" layoutX="293.0" layoutY="162.0" prefHeight="178.0" prefWidth="200.0"
+                      visible="false">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="4.0" prefHeight="167.0"
+                               prefWidth="192.0" text="Welcome to OSRSBot" textFill="WHITE"/>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

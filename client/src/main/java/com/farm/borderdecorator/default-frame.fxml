@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="431.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.farm.ShittyController">
+    <children>
+        <AnchorPane fx:id="nonClientArea" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="34.0" layoutY="6.0" opacity="0.71" prefHeight="17.0" prefWidth="226.0"
+                       text="OMG SCHABOWY SIMULATOR 2010"/>
+                <Button fx:id="close" mnemonicParsing="false" onAction="#btnClose_action" opacity="0.68"
+                        prefHeight="15.0" prefWidth="53.0" text="Close" AnchorPane.rightAnchor="5.0"
+                        AnchorPane.topAnchor="2.0"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="clientArea" layoutX="11.0" layoutY="33.0" prefHeight="392.0" prefWidth="579.0"
+                    style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0"
+                    AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0">
+            <children>
+                <Button layoutX="130.0" layoutY="159.0" mnemonicParsing="false" text="Button"/>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
