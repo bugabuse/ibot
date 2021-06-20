@@ -1,0 +1,21 @@
+<configuration>
+	<appender class="ch.qos.logback.core.ConsoleAppender" name="STDOUT">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<appender class="ch.qos.logback.core.rolling.RollingFileAppender" name="FILE">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>server.%d{yyyy-MM-dd}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="STDOUT"/>
+	</root>
+	<root level="INFO">
+		<appender-ref ref="FILE"/>
+	</root>	
+</configuration>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>OSRSBot Panel</title>
+        <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script src="./js/angular.min.js"></script>
+        <script src="./js/hello2.js"></script>
+    </head>
+    <body ng-app="runeMarketApp" ng-controller="mainController">
+        <div id="menu">
+            <div id="menulogo">
+                OSRSBot Panel
+                <div class="menu-small"><i>Because the money & bitches</i></div>
+            </div>
+            <div class="menuitems">
+                <div class="menuButton"><a href="/accounts/stats">statistics</a></div>
+                <div class="menuButton"><a href="/accounts/online">online list</a></div>
+                <div class="menuButton"><a href="/webconfig/?get=all">webconfig</a></div>
+            </div>
+        </div>
+        <div id="content">
+            <p class="menuButton" ng-click="startAll();">start all</p>
+            <p class="menuButton" ng-click="stopAll();">stop all</p>
+            <table id="pricetable">
+                <tr>
+                    <td>address</td>
+                    <td>host</td>
+                    <td>start cmd</td>
+                    <td>status</td>
+                    <td>cmd</td>
+                </tr>
+                <tr ng-repeat="data in botData track by $index">
+                    <td>{{data.ipAddress}}</td>
+                    <td>({{hostData[data.ipAddress].split(",").length}})  {{hostData[data.ipAddress]}}</td>
+                    <td><textarea style="word-break:break-word; width: 100%; height: 50px;" type="text" ng-model="startData[data.ipAddress]" ng-init="getData(data.ipAddress)"></textarea></td>
+                    <td>
+                        <p ng-if="stateData[data.ipAddress]">online</p>
+                        <font color="red"><p ng-if="!stateData[data.ipAddress]">offline</p></font>
+                    </td>
+                    <td>
+                        <p class="offerCancel" ng-click="sendCommand(data.ipAddress, 'start ' + startData[data.ipAddress])">start</p>
+                        <p class="offerCancel" ng-click="sendCommand(data.ipAddress, 'stop ')">stop</p>
+                        <p class="offerCancel"><a href="http://{{data.ipAddress}}:6080/vnc.html?host={{data.ipAddress}}&port=6080&password=marcin12&autoconnect=true">vnc</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
