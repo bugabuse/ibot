@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="net.openhft:compiler:2.2.0" type="repository">
+    <properties maven-id="net.openhft:compiler:2.2.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/openhft/compiler/2.2.0/compiler-2.2.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-8-jdk/lib/tools.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/kohsuke/jetbrains/annotations/9.0/annotations-9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

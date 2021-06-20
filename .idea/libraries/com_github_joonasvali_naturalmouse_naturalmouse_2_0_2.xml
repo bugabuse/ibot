@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.github.joonasvali.naturalmouse:naturalmouse:2.0.2" type="repository">
+    <properties maven-id="com.github.joonasvali.naturalmouse:naturalmouse:2.0.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/joonasvali/naturalmouse/naturalmouse/2.0.2/naturalmouse-2.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
